@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #main {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      nav {
+        background-color: teal;
+        color: #fff;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      .section_div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 200px;
+        border: 1px solid;
+        padding: 20px;
+      }
+
+      .section_div button {
+        border: 0;
+        padding: 10px 0;
+        background-color: red;
+        color: aquamarine;
+      }
+
+      .main_section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inner-flex{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <main>
+      <nav></nav>
+      <section></section>
+      <section></section>
+      <footer></footer>
+    </main> -->
+  </body>
+</html>
+
+<script>
+  var body = document.querySelector("body");
+
+  var main = document.createElement("main");
+  main.id = "main";
+
+  var nav = document.createElement("nav");
+
+  var nav_p_1 = document.createElement("p");
+  nav_p_1.innerHTML = "Home";
+
+  var nav_p_2 = document.createElement("p");
+  nav_p_2.innerHTML = "About";
+
+  var nav_p_3 = document.createElement("p");
+  nav_p_3.innerHTML = "Contact";
+
+  nav.append(nav_p_1, nav_p_2, nav_p_3);
+
+  var section_1 = document.createElement("section");
+  var section_1_h1 = document.createElement("h1");
+  section_1_h1.innerHTML = "Students";
+
+  var section_1_div = document.createElement("div");
+  var s1_img_1 = document.createElement("img");
+  s1_img_1.src = "logo.png";
+  var s1_btn = document.createElement("button");
+  s1_btn.innerHTML = "Know More";
+  section_1_div.className = "section_div";
+  section_1_div.append(s1_img_1, s1_btn);
+  var section_1_div = document.createElement("div");
+  var s1_img_1 = document.createElement("img");
+  s1_img_1.src = "logo.png";
+  var s1_btn = document.createElement("button");
+  s1_btn.innerHTML = "Know More";
+  section_1_div.className = "section_div";
+  section_1_div.append(s1_img_1, s1_btn);
+
+
+
+
+
+var section_2_div = document.createElement("div");
+  var s2_img_1 = document.createElement("img");
+  s2_img_1.src = "logo.png";
+  var s2_btn = document.createElement("button");
+  s2_btn.innerHTML = "Know More";
+  section_2_div.className = "section_div";
+  section_2_div.append(s2_img_1, s2_btn);
+  var section_2_div = document.createElement("div");
+  var s2_img_1 = document.createElement("img");
+  s2_img_1.src = "logo.png";
+  var s2_btn = document.createElement("button");
+  s2_btn.innerHTML = "Know More";
+  section_2_div.className = "section_div";
+  section_2_div.append(s2_img_1, s2_btn);
+
+
+
+
+
+
+
+  
+var section_3_div = document.createElement("div");
+  var s3_img_1 = document.createElement("img");
+  s3_img_1.src = "logo.png";
+  var s3_btn = document.createElement("button");
+  s3_btn.innerHTML = "Know More";
+  section_3_div.className = "section_div";
+  section_3_div.append(s3_img_1, s3_btn);
+  var section_3_div = document.createElement("div");
+  var s3_img_1 = document.createElement("img");
+  s3_img_1.src = "logo.png";
+  var s3_btn = document.createElement("button");
+  s3_btn.innerHTML = "Know More";
+  section_3_div.className = "section_div";
+  section_3_div.append(s3_img_1, s3_btn);
+
+
+    var flex_inner_div = document.createElement('div')
+    flex_inner_div.append(section_1_div, section_2_div, section_3_div)
+
+    flex_inner_div.className = 'inner-flex'
+
+    section_1.className = 'main_section'
+  section_1.append(section_1_h1, flex_inner_div);
+
+
+  var footer = document.createElement("footer");
+
+  main.append(nav, section_1, section_2, footer);
+  body.append(main);
+</script>
